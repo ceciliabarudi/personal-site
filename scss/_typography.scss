@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.base_title {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.base_copy {
+    font-family: 'Arsenal', 'Lucida Sans', 'Lucida Grande', sans-serif;
+}
+
+.base_copy_italic {
+    @extend .base_copy;
+    font-style: italic;
+}
+
+.emphasis {
+    @extend .base_copy;
+    font-weight: 700;
+    font-size: 110%;
+}
+
+a {
+    font-weight: 700;
+}

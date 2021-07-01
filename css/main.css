@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.base_title {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.base_copy, .emphasis, .base_copy_italic {
+  font-family: "Arsenal", "Lucida Sans", "Lucida Grande", sans-serif;
+}
+
+.base_copy_italic {
+  font-style: italic;
+}
+
+.emphasis {
+  font-weight: 700;
+  font-size: 110%;
+}
+
+a {
+  font-weight: 700;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  color: #1e1e1e;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  margin: 1rem auto;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #2db97a;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+dl.greeting button {
+  margin: 0;
+  padding: 0;
+  font-size: 110%;
+  border: thin solid transparent;
+  background-color: transparent;
+}
+
+dl dd {
+  margin: 0;
+  padding: 0;
+}
+
+dl.greeting .desc {
+  margin: 0;
+  display: none;
+  color: #2db97a;
+}
+
+dl.greeting button:hover,
+dl.greeting button:focus {
+  background-color: #6AECA9;
+}
+
+dl.greeting button:focus {
+  outline: thin solid transparent;
+}
+
+dl.greeting button:hover {
+  text-decoration: underline;
+}
+
+dl.greeting button:active {
+  background-color: #2db97a;
+}
+
+dl.greeting button[aria-expanded=false]::before {
+  content: url("../images/right-arrow-brown.png");
+  padding-right: 0.35em;
+}
+
+dl.greeting button[aria-expanded=true]::before {
+  content: url("../images/down-arrow-brown.png");
+  padding-right: 0.35em;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,79 @@
+@import "./_responsive";
+@import "./_colors";
+@import "./_typography";
+
+html {
+  box-sizing: border-box;
+  background-color: $athens_gray;
+  color: $eerie_black;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  margin: 1rem auto;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: $mountain_meadow;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+dl.greeting button {
+  margin: 0;
+  padding: 0;
+  font-size: 110%;
+  border: thin solid transparent;
+  background-color: transparent;
+}
+
+dl dd {
+  margin: 0;
+  padding: 0;
+}
+
+dl.greeting .desc {
+  margin: 0;
+  display: none;
+  color: $mountain_meadow;
+}
+
+dl.greeting button:hover,
+dl.greeting button:focus {
+  background-color: $caribbean_green_pearl;
+}
+
+dl.greeting button:focus {
+  outline: thin solid transparent;
+}
+
+dl.greeting button:hover {
+  text-decoration: underline;
+}
+
+dl.greeting button:active {
+  background-color: $mountain_meadow;
+}
+
+dl.greeting button[aria-expanded="false"]::before {
+  content: url('../images/right-arrow-brown.png');
+  padding-right: 0.35em;
+}
+
+dl.greeting button[aria-expanded="true"]::before {
+  content: url('../images/down-arrow-brown.png');
+  padding-right: 0.35em;
+}
