@@ -98,4 +98,49 @@ dl.greeting button[aria-expanded=true]::before {
   padding-right: 0.35em;
 }
 
+@media (max-width: 767px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vh 0;
+    width: 100%;
+    height: 18vh;
+  }
+  header h1 {
+    background-color: #6c396a;
+    width: 60vw;
+    font-size: 6vw;
+    text-align: center;
+    padding: 5vh 0;
+  }
+  header h1 a {
+    color: #6AECA9;
+    text-decoration: underline rgba(106, 236, 169, 0);
+    transition: text-decoration-color 300ms;
+  }
+  header h1 a:focus, header h1 a:hover, header h1 a:active {
+    text-decoration-color: #6aeca9;
+  }
+  header nav {
+    text-align: end;
+    font-size: 4.7vw;
+    padding: 0 7vw;
+  }
+  header nav ul {
+    margin: auto;
+  }
+  header nav a {
+    text-decoration: underline rgba(45, 185, 122, 0);
+    transition: text-decoration-color 300ms;
+  }
+  header nav a:focus, header nav a:hover, header nav a:active {
+    text-decoration-color: #2db97a;
+  }
+  header nav a[aria-current=page] {
+    text-decoration: underline #2db97a;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
