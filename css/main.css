@@ -71,6 +71,27 @@ header nav a[aria-current=page] {
     padding: 0 7vw;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    margin: 1vh 0;
+    height: 10vh;
+    overflow: auto;
+  }
+  header h1 {
+    width: 45vw;
+    font-size: 4vw;
+    padding: 5vh 0;
+  }
+  header nav {
+    width: 50vw;
+    font-size: 3vw;
+    padding: 0 6vw 0 1vw;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 html {
   box-sizing: border-box;
@@ -137,16 +158,6 @@ dl.greeting button:hover {
 
 dl.greeting button:active {
   background-color: #2db97a;
-}
-
-dl.greeting button[aria-expanded=false]::before {
-  content: url("../images/right-arrow-brown.png");
-  padding-right: 0.35em;
-}
-
-dl.greeting button[aria-expanded=true]::before {
-  content: url("../images/down-arrow-brown.png");
-  padding-right: 0.35em;
 }
 
 /*# sourceMappingURL=main.css.map */

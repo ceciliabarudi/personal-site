@@ -67,13 +67,3 @@ dl.greeting button:hover {
 dl.greeting button:active {
   background-color: $mountain_meadow;
 }
-
-dl.greeting button[aria-expanded="false"]::before {
-  content: url('../images/right-arrow-brown.png');
-  padding-right: 0.35em;
-}
-
-dl.greeting button[aria-expanded="true"]::before {
-  content: url('../images/down-arrow-brown.png');
-  padding-right: 0.35em;
-}

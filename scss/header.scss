@@ -59,4 +59,27 @@ header {
 
     }
   }
+
+  @include tablet {
+    margin: 1vh 0;
+    height: 10vh;
+    overflow: auto;
+  
+    h1 {
+      width: 45vw;
+      font-size: 4vw;
+      padding: 5vh 0;
+    }
+  
+    nav {
+      width: 50vw;
+      font-size: 3vw;
+      padding: 0 6vw 0 1vw;
+      
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
 }
