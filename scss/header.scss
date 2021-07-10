@@ -1,0 +1,62 @@
+@import "./_responsive";
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  h1 {
+    background-color: $cosmic;
+    text-align: center;
+
+    a {
+      color: $caribbean_green_pearl;
+      text-decoration: underline rgba($caribbean_green_pearl, 0);
+      transition: text-decoration-color 300ms;
+
+      &:focus, &:hover, &:active {
+        text-decoration-color: rgba($caribbean_green_pearl, 1);
+      }
+    }
+  }
+
+  nav {
+    text-align: end;
+
+    ul {
+      margin: auto;
+    }
+
+    a {
+      text-decoration: underline rgba($mountain_meadow, 0);
+      transition: text-decoration-color 300ms;
+
+      &:focus, &:hover, &:active {
+        text-decoration-color: rgba($mountain_meadow, 1);
+      }
+
+      &[aria-current="page"] {
+        text-decoration: underline $mountain_meadow;
+      }
+    }
+  }
+
+  @include mobile {
+    margin: 1vh 0;
+    height: 18vh;
+  
+    h1 {
+      width: 60vw;
+      font-size: 6vw;
+      padding: 5vh 0;
+    }
+  
+    nav {
+      font-size: 4.7vw;
+      padding: 0 7vw;
+
+    }
+  }
+}
