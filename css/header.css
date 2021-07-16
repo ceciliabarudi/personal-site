@@ -1,17 +1,94 @@
-/* Error: Undefined variable.
- *    ,
- * 11 |     background-color: $cosmic;
- *    |                       ^^^^^^^
- *    '
- *   scss/header.scss 11:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 11 \2502      background-color: $cosmic;\a    \2502                        ^^^^^^^\a    \2575 \a   scss/header.scss 11:23  root stylesheet";
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
+header h1 {
+  background-color: #6c396a;
+  text-align: center;
+  width: 33vw;
+  font-size: 2vw;
+  padding: 1.5vh 0;
+}
+header h1 a {
+  color: #6AECA9;
+  text-decoration: underline rgba(106, 236, 169, 0);
+  transition: text-decoration-color 300ms;
+}
+header h1 a:focus, header h1 a:hover, header h1 a:active {
+  text-decoration-color: #6aeca9;
+}
+header nav {
+  width: 50vw;
+  font-size: 1.2vw;
+  padding: 0 10vw 0 8vw;
+  text-align: end;
+}
+header nav ul {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: underline rgba(45, 185, 122, 0);
+  transition: text-decoration-color 300ms;
+}
+header nav a:focus, header nav a:hover, header nav a:active {
+  text-decoration-color: #2db97a;
+}
+header nav a[aria-current=page] {
+  text-decoration: underline #2db97a;
+}
+@media only screen and (max-width: 767px) {
+  header {
+    margin: 1vh 0;
+    height: 18vh;
+  }
+  header h1 {
+    width: 60vw;
+    font-size: 6vw;
+    padding: 5vh 0;
+  }
+  header nav {
+    width: 40vw;
+    font-size: 4.7vw;
+    padding: 0 7vw;
+  }
+  header nav ul {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  header {
+    margin: 5vh 0;
+  }
+  header h1 {
+    width: 50vw;
+    font-size: 5vw;
+    padding: 5vh 0;
+  }
+  header nav {
+    font-size: 3vw;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    margin: 1vh 0;
+    height: 10vh;
+    overflow: auto;
+  }
+  header h1 {
+    width: 45vw;
+    font-size: 3vw;
+    padding: 5vh 0;
+  }
+  header nav {
+    width: 50vw;
+    font-size: 2vw;
+    padding: 0 6vw 0 1vw;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

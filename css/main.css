@@ -31,6 +31,9 @@ header {
 header h1 {
   background-color: #6c396a;
   text-align: center;
+  width: 33vw;
+  font-size: 2vw;
+  padding: 1.5vh 0;
 }
 header h1 a {
   color: #6AECA9;
@@ -41,10 +44,15 @@ header h1 a:focus, header h1 a:hover, header h1 a:active {
   text-decoration-color: #6aeca9;
 }
 header nav {
+  width: 50vw;
+  font-size: 1.2vw;
+  padding: 0 10vw 0 8vw;
   text-align: end;
 }
 header nav ul {
   margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 header nav a {
   text-decoration: underline rgba(45, 185, 122, 0);
@@ -67,8 +75,25 @@ header nav a[aria-current=page] {
     padding: 5vh 0;
   }
   header nav {
+    width: 40vw;
     font-size: 4.7vw;
     padding: 0 7vw;
+  }
+  header nav ul {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  header {
+    margin: 5vh 0;
+  }
+  header h1 {
+    width: 50vw;
+    font-size: 5vw;
+    padding: 5vh 0;
+  }
+  header nav {
+    font-size: 3vw;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -79,17 +104,13 @@ header nav a[aria-current=page] {
   }
   header h1 {
     width: 45vw;
-    font-size: 4vw;
+    font-size: 3vw;
     padding: 5vh 0;
   }
   header nav {
     width: 50vw;
-    font-size: 3vw;
+    font-size: 2vw;
     padding: 0 6vw 0 1vw;
-  }
-  header nav ul {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
