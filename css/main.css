@@ -130,7 +130,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  margin: 1rem auto;
+  margin: 2vh auto;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -179,6 +179,83 @@ dl.greeting button:hover {
 
 dl.greeting button:active {
   background-color: #2db97a;
+}
+
+main {
+  margin: 16vh 19vw 16vh calc(100vw / 11);
+  font-size: 1.7vw;
+}
+main p {
+  line-height: 1.5;
+}
+
+.h-card {
+  margin: 16vh 45vw 16vh calc(100vw / 11);
+  font-size: 1.8vw;
+}
+.h-card p {
+  display: inline;
+}
+.h-card li {
+  margin: 3vh 3vw 0 0;
+  display: inline-block;
+}
+.h-card a {
+  color: #6c396a;
+  font-size: 2.2vw;
+}
+
+@media only screen and (max-width: 767px) {
+  main {
+    margin: 5vh 10vw;
+    font-size: 4.5vw;
+  }
+
+  .h-card {
+    margin: 5vh 10vw;
+    font-size: 6vw;
+  }
+  .h-card li {
+    margin: 3vh 10vw 0 0;
+    display: inline-block;
+  }
+  .h-card a {
+    font-size: 10vw;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  main {
+    margin: 5vh 8vw;
+    font-size: 3vw;
+  }
+
+  .h-card {
+    margin: 5vh 8vw;
+    font-size: 4vw;
+  }
+  .h-card li {
+    margin: 0 9vw 0 0;
+  }
+  .h-card a {
+    font-size: 6vw;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    margin: 3vh 10vw;
+    font-size: 4vw;
+  }
+
+  .h-card {
+    margin: 5vh 12vw;
+    font-size: 4vw;
+  }
+  .h-card li {
+    margin: 2vh 9vw 0 0;
+  }
+  .h-card a {
+    font-size: 6vw;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
