@@ -1,6 +1,7 @@
 @import "./_colors";
 @import "./_typography";
 @import "./header";
+@import "./footer";
 
 html {
   box-sizing: border-box;
@@ -14,13 +15,20 @@ html {
 }
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0 auto;
   line-height: 1.6;
-  margin: 2vh auto;
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+.anything-that-is-not-a-footer {
+  flex: 1 0 auto;
+}
+
+.a-footer {
+  flex-shrink: 0;
 }
 
 a {
@@ -120,12 +128,12 @@ main {
 
 @include mobile-landscape {
   main {
-    margin: 5vh 8vw;
+    margin: 20vh 8vw;
     font-size: 3vw;
   }
 
   .h-card {
-    margin: 5vh 8vw;
+    margin: 20vh 8vw;
     font-size: 4vw;
     
     li {

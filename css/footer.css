@@ -1,0 +1,17 @@
+.a-footer {
+  width: 100vw;
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+  text-align: center;
+}
+.a-footer p {
+  margin-block-start: 1vh;
+  margin-block-end: 1vh;
+}
+@media only screen and (max-width: 767px) {
+  .a-footer {
+    font-size: small;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

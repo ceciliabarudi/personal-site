@@ -114,6 +114,22 @@ header nav a[aria-current=page] {
   }
 }
 
+.a-footer {
+  width: 100vw;
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+  text-align: center;
+}
+.a-footer p {
+  margin-block-start: 1vh;
+  margin-block-end: 1vh;
+}
+@media only screen and (max-width: 767px) {
+  .a-footer {
+    font-size: small;
+  }
+}
+
 html {
   box-sizing: border-box;
   background-color: #f8f9fa;
@@ -127,13 +143,20 @@ html {
 }
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0 auto;
   line-height: 1.6;
-  margin: 2vh auto;
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+.anything-that-is-not-a-footer {
+  flex: 1 0 auto;
+}
+
+.a-footer {
+  flex-shrink: 0;
 }
 
 a {
@@ -225,12 +248,12 @@ main p {
 }
 @media only screen and (max-width: 767px) and (orientation: landscape) {
   main {
-    margin: 5vh 8vw;
+    margin: 20vh 8vw;
     font-size: 3vw;
   }
 
   .h-card {
-    margin: 5vh 8vw;
+    margin: 20vh 8vw;
     font-size: 4vw;
   }
   .h-card li {

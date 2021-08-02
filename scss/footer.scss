@@ -1,0 +1,18 @@
+@import "./_responsive";
+@import "./colors";
+
+.a-footer {
+    width: 100vw;
+    background-color: $eerie_black;
+    color: $athens_gray;
+    text-align: center;
+
+    p {
+        margin-block-start: 1vh;
+        margin-block-end: 1vh;
+    }
+
+    @include mobile {
+        font-size: small;
+    }
+}
