@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.base_title {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.base_copy, .emphasis, .base_copy_italic {
+  font-family: "Arsenal", "Lucida Sans", "Lucida Grande", sans-serif;
+}
+
+.base_copy_italic {
+  font-style: italic;
+}
+
+.emphasis {
+  font-weight: 700;
+  font-size: 110%;
+}
+
+a {
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header h1 {
+  background-color: #6c396a;
+  text-align: center;
+  width: 33vw;
+  font-size: 2vw;
+  padding: 1.5vh 0;
+}
+header h1 a {
+  color: #6AECA9;
+  text-decoration: underline rgba(106, 236, 169, 0);
+  transition: text-decoration-color 300ms;
+}
+header h1 a:focus, header h1 a:hover, header h1 a:active {
+  text-decoration-color: #6aeca9;
+}
+header nav {
+  width: 50vw;
+  font-size: 1.2vw;
+  padding: 0 10vw 0 8vw;
+  text-align: end;
+}
+header nav ul {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: underline rgba(45, 185, 122, 0);
+  transition: text-decoration-color 300ms;
+}
+header nav a:focus, header nav a:hover, header nav a:active {
+  text-decoration-color: #2db97a;
+}
+header nav a[aria-current=page] {
+  text-decoration: underline #2db97a;
+}
+@media only screen and (max-width: 767px) {
+  header {
+    margin: 1vh 0;
+    height: 18vh;
+  }
+  header h1 {
+    width: 60vw;
+    font-size: 6vw;
+    padding: 5vh 0;
+  }
+  header nav {
+    width: 40vw;
+    font-size: 4.7vw;
+    padding: 0 7vw;
+  }
+  header nav ul {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  header {
+    margin: 5vh 0;
+  }
+  header h1 {
+    width: 50vw;
+    font-size: 5vw;
+    padding: 5vh 0;
+  }
+  header nav {
+    font-size: 3vw;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    margin: 1vh 0;
+    height: 10vh;
+    overflow: auto;
+  }
+  header h1 {
+    width: 45vw;
+    font-size: 3vw;
+    padding: 5vh 0;
+  }
+  header nav {
+    width: 50vw;
+    font-size: 2vw;
+    padding: 0 6vw 0 1vw;
+  }
+}
+
+.a-footer {
+  width: 100vw;
+  background-color: #1e1e1e;
+  color: #f8f9fa;
+  text-align: center;
+}
+.a-footer p {
+  margin-block-start: 1vh;
+  margin-block-end: 1vh;
+}
+@media only screen and (max-width: 767px) {
+  .a-footer {
+    font-size: small;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  color: #1e1e1e;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.anything-that-is-not-a-footer {
+  flex: 1 0 auto;
+}
+
+.a-footer {
+  flex-shrink: 0;
+}
+
+a {
+  color: #2db97a;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+dl.greeting button {
+  margin: 0;
+  padding: 0;
+  font-size: 110%;
+  border: thin solid transparent;
+  background-color: transparent;
+}
+
+dl dd {
+  margin: 0;
+  padding: 0;
+}
+
+dl.greeting .desc {
+  margin: 0;
+  display: none;
+  color: #2db97a;
+}
+
+dl.greeting button:hover,
+dl.greeting button:focus {
+  background-color: #6AECA9;
+}
+
+dl.greeting button:focus {
+  outline: thin solid transparent;
+}
+
+dl.greeting button:hover {
+  text-decoration: underline;
+}
+
+dl.greeting button:active {
+  background-color: #2db97a;
+}
+
+main {
+  margin: 16vh 19vw 16vh calc(100vw / 11);
+  font-size: 1.7vw;
+}
+main p {
+  line-height: 1.5;
+}
+
+.h-card {
+  margin: 16vh 45vw 16vh calc(100vw / 11);
+  font-size: 1.8vw;
+}
+.h-card p {
+  display: inline;
+}
+.h-card li {
+  margin: 3vh 3vw 0 0;
+  display: inline-block;
+}
+.h-card a {
+  color: #6c396a;
+  font-size: 2.2vw;
+}
+
+@media only screen and (max-width: 767px) {
+  main {
+    margin: 5vh 10vw;
+    font-size: 4.5vw;
+  }
+
+  .h-card {
+    margin: 5vh 10vw;
+    font-size: 6vw;
+  }
+  .h-card li {
+    margin: 3vh 10vw 0 0;
+    display: inline-block;
+  }
+  .h-card a {
+    font-size: 10vw;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  main {
+    margin: 20vh 8vw;
+    font-size: 3vw;
+  }
+
+  .h-card {
+    margin: 20vh 8vw;
+    font-size: 4vw;
+  }
+  .h-card li {
+    margin: 0 9vw 0 0;
+  }
+  .h-card a {
+    font-size: 6vw;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    margin: 3vh 10vw;
+    font-size: 4vw;
+  }
+
+  .h-card {
+    margin: 5vh 12vw;
+    font-size: 4vw;
+  }
+  .h-card li {
+    margin: 2vh 9vw 0 0;
+  }
+  .h-card a {
+    font-size: 6vw;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
